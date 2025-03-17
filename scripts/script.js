@@ -95,3 +95,16 @@ document.addEventListener("selectstart", function (event) {
 document.addEventListener("copy", function (event) {
 	event.preventDefault();
 });
+
+function Menu(e) {
+	let list = document.getElementById("menu-bar");
+	e.name === "menu"
+		? ((e.name = "close"),
+		  list.classList.add("top-[80px]"),
+		  list.classList.add("opacity-100"))
+		: ((e.name = "menu"),
+		  list.classList.remove("top-[80px]"),
+		  list.classList.remove("opacity-100"));
+}
+// Scroll on top
+window.scrollTo(0, 0);

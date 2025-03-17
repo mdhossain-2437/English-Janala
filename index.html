@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body class=" font-poppins  bg-gray-50 text-gray-900">
   <div class="watermark">DELOWAR HOSSAIN</div>
@@ -45,7 +47,6 @@
 							id="password"
 							placeholder="Enter Login Code (123456)"
 							class="border border-gray-300 rounded px-4 py-2 w-8/12"
-							required
 						/>
 						<br />
 						<button
@@ -78,7 +79,10 @@
 					<img src="./assets/logo.png" alt="Logo" class="h-8 w-8" />
 					<span class="font-bold text-lg">জানালা</span>
 				</div>
-        <div class="flex flex-wrap gap-4">
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+        <div id="menu-bar" class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 flex justify-center bg-[#C6BDBD] flex-wrap gap-4">
   <button id="faqBtn"
     class="group flex items-center gap-2 px-5 py-2 border-2 border-indigo-700 text-indigo-700 font-semibold rounded-md relative overflow-hidden transition-all duration-300 ease-in-out"
   >

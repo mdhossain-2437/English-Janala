@@ -1,0 +1,33 @@
+.poppins {
+	font-family: "Poppins", sans-serif;
+}
+.bangla {
+	font-family: "Hind Siliguri", sans-serif;
+}
+.inter {
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	font-family: "poppins";
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.watermark {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: rgba(0, 0, 0, 0.08);
+	font-weight: bold;
+	white-space: nowrap;
+	pointer-events: none;
+	z-index: 9999;
+	text-transform: uppercase;
+}
